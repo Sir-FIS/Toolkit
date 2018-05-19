@@ -28,6 +28,7 @@
 // https://firefart.at
 //
 //extra modifications done by Sir_FIS -- mostly cosmetic. 
+//full thanks and to Firefart for creating this script. 
 
 
 #include <fcntl.h>
