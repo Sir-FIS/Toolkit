@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#in dev
 import hashlib,sys,getopt
 
 def usage():
