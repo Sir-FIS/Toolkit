@@ -8,3 +8,5 @@ nmap $IP -R -vv -sn -oN dns-"$IP" &
 nmap $IP  --script smb-enum-shares -vv  -oN smb_enum-"$IP" &
 nmap $IP -O -T4 -n -vv -oN OS-"$IP" &
 nbtscan -vh $IP > nbt-scan
+
+#example ./recon.sh 192.168.0.1-254
