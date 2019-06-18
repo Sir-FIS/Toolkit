@@ -6,7 +6,7 @@ nmap -sU $IP -vv  -n --max-retries=3 -oN  udp-"$IP"  &
 nmap   $IP -vv  -n -sV --version-light -oN banners-"$IP" &
 nmap $IP -R -vv -sn -oN dns-"$IP" &
 nmap $IP  --script smb-enum-shares -vv  -oN smb_enum-"$IP" &
-nmap $IP -O -T4 -n -vv -oN OS-"$IP" &
+nmap $IP -O -T3 -n -vv -oN OS-"$IP" &
 nbtscan -vh $IP > nbt-scan-"$IP"
 
 #example ./recon.sh 192.168.0.1-254
